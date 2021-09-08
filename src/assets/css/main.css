@@ -1,0 +1,8 @@
+@keyframes slidedown {
+    0.0%{
+        height: 0px;
+    }
+    99.5%{
+        height: 100%;
+    }
+}
