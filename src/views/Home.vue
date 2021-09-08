@@ -15,9 +15,9 @@
     <footer class="h-32">
       <div class="flex w-full justify-end p-12 h-full">
         <div class="absolute social-top"></div>
-        <div class="relative z-50">
-          <div class="social-icon-bg bg-black rounded-full absolute"></div>
-          <a class="absolute right-0 md:right-16 z-50 social-icon-wrapper flex justify-center items-center transform transition duration-150 ease-in-out hover:scale-125 focus:scale-125" href="https://twitter.com/lsunkieder" aria-label="Go To My Twitter Page">
+        <div class="z-50">
+          <div class="social-icon-bg bg-black absolute right-0 bottom-0 h-32 w-32"></div>
+          <a class="absolute right-16 z-50 social-icon-wrapper flex justify-center items-center " href="https://twitter.com/lsunkieder" aria-label="Go To My Twitter Page">
             <img class="social-icon" src="twitter-white.png"  alt="Twitter Logo"/>
           </a>
         </div>
@@ -28,7 +28,7 @@
 </template>
 
 <script>
-
+//transform transition duration-150 ease-in-out hover:scale-125 focus:scale-125
 export default {
   name: 'Home',
    setup () {
@@ -40,36 +40,42 @@ export default {
 
 <style>
 @keyframes slideright {
-    from{
+    0.0%{
         width: 0px;
     }
-    to{
-        width:80%;
+    100%{
+        width:100%;
     }
 }
 @keyframes slidedown {
-    from{
+    0.0%{
         height: 0px;
     }
-    to{
-        height:90%;
+    100%{
+        height:100%;
     }
 }
 @keyframes scaleUp {
     0.0%{
         transform: scale(1);
     }
+    70%{
+        transform: scale(2);
+    }
+    90%{
+        transform: scale(1.5);
+    }
     100%{
         transform: scale(2);
     }
 }
 .social-left {
-  animation: slideright 2s ease 0s 1 normal forwards;
+  animation: slideright 3s ease 0s 1 normal forwards;
   border-top: solid 3px white;
   left:0;
 }
 .social-top {
-  /* animation: slidedown 3s ease 0s 1 normal forwards; */
+  animation: slidedown 3s ease 0s 1 normal forwards;
   border-right: solid 3px white;
   top: 0;
 }
@@ -79,12 +85,6 @@ export default {
 }
 .social-icon {
   width: 100%;
-  animation: scaleUp 6s ease 0s 1 normal forwards;
-}
-.social-icon-bg {
-  top: -50%;
-  right: -140%;
-  width:400%;
-  height: 250%;
+  animation: scaleUp 2s ease 0s 1 normal forwards;
 }
 </style>
