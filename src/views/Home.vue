@@ -13,16 +13,15 @@
       </div>
     </main>
     <footer class="h-32">
-      <div class="flex w-full justify-end p-12 h-full">
-        <div class="absolute social-top"></div>
-        <div class="z-50">
-          <div class="social-icon-bg bg-black absolute right-0 bottom-0 h-32 w-32"></div>
-          <a class="absolute right-16 z-50 social-icon-wrapper flex justify-center items-center " href="https://twitter.com/lsunkieder" aria-label="Go To My Twitter Page">
+      <div class="absolute social-top"></div>
+      <div class="flex w-full justify-end p-6 h-full">
+        <div class="z-50 w-full flex items-center justify-end mr-16 md:mr-32 lg:mr-64">
+          <a class="z-50 social-icon-wrapper flex justify-center items-center " href="https://twitter.com/lsunkieder" aria-label="Go To My Twitter Page">
             <img class="social-icon" src="twitter-white.png"  alt="Twitter Logo"/>
           </a>
         </div>
-        <div class="z-40 absolute social-left"></div>
       </div>
+      <div class="z-40 absolute social-left"></div>
     </footer>
   </div>
 </template>
@@ -70,14 +69,16 @@ export default {
     }
 }
 .social-left {
-  animation: slideright 3s ease 0s 1 normal forwards;
+  animation: slideright 2.5s ease 0s 1 normal forwards;
   border-top: solid 3px white;
   left:0;
+  bottom: 16%;
 }
 .social-top {
   animation: slidedown 3s ease 0s 1 normal forwards;
   border-right: solid 3px white;
   top: 0;
+  right: 12%;
 }
 .social-icon-wrapper {
   width: 25px;
@@ -85,6 +86,6 @@ export default {
 }
 .social-icon {
   width: 100%;
-  animation: scaleUp 2s ease 0s 1 normal forwards;
+  /*animation: scaleUp 2s ease 0s 1 normal forwards;*/
 }
 </style>
