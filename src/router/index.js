@@ -4,8 +4,17 @@ import Home from '../views/Home.vue'
 const routes = [
   {
     path: '/',
-    name: 'Home',
-    component: Home
+    component: Home,
+    children: [
+      {
+        path: '/',
+        component: () => import(/* webpackChunkName: "roll" */ '../views/Roll.vue'),
+      },
+      {
+        path: 'contact',
+        component: () => import(/* webpackChunkName: "contact" */ '../views/Contact.vue'),
+      },
+    ],
   },
   // {
   //   path: '/site-administration',
