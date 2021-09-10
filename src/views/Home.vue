@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-black text-white font-raleway md:min-h-screen flex flex-col">  
+  <div class="bg-black text-white font-raleway min-h-screen flex flex-col overflow-hidden">  
     <main class="container m-auto flex-grow">
       <div class="flex justify-center mt-10">
         <img class="w-36 rounded-full" src="lukesnider.jpeg" alt="Luke Snider " />
