@@ -1,26 +1,28 @@
 <template>
-  <div class="bg-black text-white font-raleway md:min-h-screen flex flex-col">  
-    <main class="container m-auto flex-grow">
-      <div class="flex justify-center mt-10">
-        <img class="w-36 rounded-full" src="lukesnider.jpeg" alt="Luke Snider " />
-      </div>
-      <div class="flex flex-col w-full justify-center items-center p-6">
-        <h1 class="text-4xl">
-          Luke Snider
-        </h1>
-        <p>
-          Web Developer
-        </p>
-      </div>
-      <div class="slideRight opacity-0 my-10 flex justify-center">
-        <transition name="slideLeft">
-          <router-view></router-view>
-        </transition>
+  <div class="bg-black text-white font-raleway h-screen md:min-h-screen flex flex-col">  
+    <main id="main" class="w-full flex-grow">
+      <div class="mr-10 md:mr-24">
+        <div class="flex justify-center mt-10">
+          <img class="w-16 md:w-36 rounded-full" src="lukesnider.jpeg" alt="Luke Snider " />
+        </div>
+        <div class="flex flex-col w-full justify-center items-center p-6">
+          <h1 class="text-2xl md:text-4xl">
+            Luke Snider
+          </h1>
+          <p>
+            Web Developer
+          </p>
+        </div>
+        <div class="slideRight opacity-0 md:my-10 flex justify-center">
+          <transition name="slideLeft">
+            <router-view></router-view>
+          </transition>
+        </div>
       </div>
     </main>
     <footer class="flex h-32">
-      <div class="absolute social-top"></div>
-      <div class="h-10 flex w-full justify-end p-6 md:h-full">
+      <div class="absolute social-top right-10 md:right-24"></div>
+      <div class="h-10 flex w-full justify-end p-6 h-full">
         <div class="z-50 w-full flex items-center justify-end mr-16 md:mr-32 lg:mr-64">
           <a target="_blank" class="mx-2 z-50 social-icon-wrapper flex justify-center items-center " href="https://twitter.com/lsunkieder" aria-label="Go To My Twitter Page">
             <img class="social-icon" src="twitter-white.png"  alt="Twitter Logo"/>
@@ -100,7 +102,6 @@ export default {
   animation: slidedown 3s ease 0s 1 normal forwards;
   border-right: solid 3px white;
   top: 0;
-  right: 12%;
 }
 .social-icon-wrapper {
   width: 25px;
