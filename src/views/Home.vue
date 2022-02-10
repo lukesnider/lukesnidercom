@@ -13,10 +13,12 @@
             Web Developer
           </p>
         </div>
-        <div class="slideRight opacity-0 md:my-10 flex justify-center">
-          <transition name="slideLeft">
-            <router-view></router-view>
-          </transition>
+        <div class="slideRight opacity-0 md:my-10 flex justify-center w-full">
+          <router-view v-slot="{ Component }">
+            <transition name="slideLeft">
+              <component :is="Component" />
+            </transition>
+          </router-view>
         </div>
       </div>
     </main>

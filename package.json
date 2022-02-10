@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "animejs": "^3.2.1",
+    "axios": "^0.25.0",
     "core-js": "^3.6.5",
     "vue": "^3.0.0",
     "vue-router": "^4.0.0-0",
@@ -40,7 +41,9 @@
     "parserOptions": {
       "parser": "babel-eslint"
     },
-    "rules": {}
+    "rules": {
+      "no-mixed-spaces-and-tabs": 0
+    }
   },
   "browserslist": [
     "> 1%",

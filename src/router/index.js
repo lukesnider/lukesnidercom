@@ -8,12 +8,12 @@ const routes = [
     children: [
       {
         path: '/',
-        component: () => import(/* webpackChunkName: "roll" */ '../views/Roll.vue'),
+        component: () => import(/* webpackChunkName: "roll" */ '../views/Contact.vue'),
       },
-      {
-        path: 'contact',
-        component: () => import(/* webpackChunkName: "contact" */ '../views/Contact.vue'),
-      },
+      // {
+      //   path: 'contact',
+      //   component: () => import(/* webpackChunkName: "contact" */ '../views/Contact.vue'),
+      // },
     ],
   },
   // {
