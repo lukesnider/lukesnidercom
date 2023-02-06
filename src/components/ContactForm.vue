@@ -11,15 +11,6 @@ export default {
 	}
   },
   methods: {
-	  resetForm() {
-	  },
-	  Validate() {
-	  },
-	  Submit(e) {
-		  e.preventDefault()
-	  },
-	  FieldUpdated(item) {
-	  },
   },
   props: [],
   setup() {
