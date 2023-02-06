@@ -29,10 +29,10 @@
           <a target="_blank" class="mx-2 z-50 social-icon-wrapper flex justify-center items-center " href="https://github.com/lukesnider" aria-label="Go To My Github Profile">
             <img class="social-icon" src="github-white.png"  alt="Github Logo"/>
           </a>
-          <a target="_blank" class="mx-2 z-50 social-icon-wrapper flex justify-center items-center " href="https://twitter.com/lsunkieder" aria-label="Go To My Twitter Profile">
+          <!-- <a target="_blank" class="mx-2 z-50 social-icon-wrapper flex justify-center items-center " href="https://twitter.com/lsunkieder" aria-label="Go To My Twitter Profile">
             <img class="social-icon" src="twitter-white.png"  alt="Twitter Logo"/>
-          </a>
-          <a target="_blank" class="mx-2 z-50 social-icon-wrapper flex justify-center items-center " href="https://www.linkedin.com/in/luke-snider-08262871" aria-label="Go To My Linkedin Profile">
+          </a> -->
+          <a target="_blank" class="mx-2 z-50 social-icon-wrapper flex justify-center items-center " href="https://www.linkedin.com/in/luke-snider-814335255/" aria-label="Go To My Linkedin Profile">
             <img class="social-icon" src="linkedin-white.png"  alt="Linkedin Logo"/>
           </a>
         </div>
